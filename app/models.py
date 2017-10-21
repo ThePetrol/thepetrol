@@ -117,6 +117,16 @@ class Animal(TimeStamp):
 
     gender = models.IntegerField(choices=Gender, **nullable)
 
+    hair_condition = models.CharField(max_length=255, **nullable)
+    health = models.CharField(max_length=255, **nullable)
+
+    pattern = models.CharField(max_length=255, **nullable)
+    size = models.CharField(max_length=255, **nullable)
+    species = models.CharField(max_length=255, **nullable)
+    weight = models.CharField(max_length=255, **nullable)
+
+
+
     # color = models.IntegerField(choices=Color, default=Color)
     # animal_type = models.IntegerField(choices=AnimalType)
     # pattern = models.IntegerField(choices=Pattern)
