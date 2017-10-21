@@ -115,7 +115,8 @@ class Animal(TimeStamp):
     emotion = models.CharField(max_length=255, **nullable)
     # emotion_type = models.IntegerField(choices=EmotionType, **nullable)
 
-    gender = models.IntegerField(choices=Gender, **nullable)
+    # gender = models.IntegerField(choices=Gender, **nullable)
+    gender = models.CharField(max_length=255, **nullable)
 
     hair_condition = models.CharField(max_length=255, **nullable)
     health = models.CharField(max_length=255, **nullable)

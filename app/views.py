@@ -8,6 +8,7 @@ from rest_framework.decorators import api_view
 from django.http import HttpResponse, Http404
 from django.conf import settings
 
+
 class MessageViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Messages to be viewed or edited.
