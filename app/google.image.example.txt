@@ -1,0 +1,575 @@
+Label Annotations
+"dog"
+"cat"
+"dog breed"
+"dog breed group"
+"dog like mammal"
+"puppy"
+"golden retreiver"
+"retriever"
+"labrador retreiver"
+"companion dog"
+
+
+webDetection: {
+webEntities: [
+{
+entityId: "/m/01t032",
+score: 30.565536,
+description: "Golden Retriever"
+},
+{
+entityId: "/m/0km3f",
+score: 18.659134,
+description: "Labrador Retriever"
+},
+{
+entityId: "/m/0d7s3w",
+score: 1.6102275,
+description: "Puppy"
+},
+{
+entityId: "/m/0kpmf",
+score: 0.8717795,
+description: "Dog breed"
+},
+{
+entityId: "/m/01yrx",
+score: 0.548,
+description: "Cat"
+},
+{
+entityId: "/m/03yl64",
+score: 0.425986,
+description: "Companion dog"
+},
+{
+entityId: "/m/068hy",
+score: 0.3819,
+description: "Pet"
+},
+{
+entityId: "/m/039vb8",
+score: 0.3501,
+description: "Therapy dog"
+},
+{
+entityId: "/m/0jbk",
+score: 0.3009,
+description: "Animal"
+},
+{
+entityId: "/m/0hrcsqr",
+score: 0.2974,
+description: "Dog–cat relationship"
+},
+{
+entityId: "/m/020xxc",
+score: 0.2881,
+description: "Retriever"
+},
+{
+entityId: "/m/02wbm",
+score: 0.2835,
+description: "Food"
+},
+{
+entityId: "/m/0jg24",
+score: 0.2791,
+description: "Image"
+},
+{
+entityId: "/m/04k075",
+score: 0.2716,
+description: "Dog training"
+},
+{
+entityId: "/m/0bt9lr",
+score: 0.00017404,
+description: "Dog"
+}
+],
+fullMatchingImages: [
+{
+url: "http://www.qysh.me/uploads/images/2017/September/05/auto_qeni_11504630653.jpg"
+},
+{
+url: "https://i.dawn.com/primary/2017/01/5882661cdd5d1.jpg"
+},
+{
+url: "https://pbs.twimg.com/media/DIFVdxAWsAUI5xE.jpg"
+},
+{
+url: "http://www.thecolombopost.net/wp-content/uploads/2017/07/Dog-2.jpg"
+},
+{
+url: "https://cdn2.hercampus.com/6%20Adorable%20Dog%20Gifs.jpg"
+},
+{
+url: "https://lh3.googleusercontent.com/-74LjcOJeluo/WZiahjplmKI/AAAAAAAADV4/mYBGxbTF4bs1QCrPgLiSbLKEUgU8w98egCJoC/w719-h465/Screenshot_20170819-220602.jpg"
+},
+{
+url: "http://tylanpowder.com/wp-content/uploads/2017/06/5-Signs-of-Joint-Pain-in-Dogs-and-the-1-Treatment-Option-1.jpg"
+},
+{
+url: "https://i.redditmedia.com/W1tIl0ZzzPAitbDYJJ3uUNWbqqLtVcg7Yu4DCTiflfM.jpg?w=680&amp;s=0583dd7bbcc65b39d6d1501ab294b4b4"
+},
+{
+url: "http://i1.wp.com/ourtru.ca/wp-ourtrucontent/uploads/2017/02/dog1.jpg"
+},
+{
+url: "https://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/21568666_340919689699613_7632052581711216640_n.jpg?ig_cache_key=MTYwMjc0OTI2MzgyODY4MjkxMQ%3D%3D.2"
+},
+{
+url: "https://i1.wp.com/www.simplypets.com/wp-content/uploads/2017/07/dog-quotes-featured.jpg?fit=680%2C453&amp;ssl=1"
+},
+{
+url: "https://1.bp.blogspot.com/-oRdlrcqIAH4/WG6Cq7JKo4I/AAAAAAAAAWE/nhjY7G_SxTkrl1IJlEBTEO6Ap2H0-XMGQCLcB/s1600/puppy-1.jpg"
+},
+{
+url: "http://domaintemplates.website/uploads/3/4/8/8/34887956/puppy-1_2_orig.jpg"
+},
+{
+url: "http://mmbiz.qpic.cn/mmbiz_jpg/3LxMQLD9XuKyUGvvibVEbFfjO7v3nhzxZeuJDFKqo7gbdsOx5Ej5EGjkG7c6cO9Wm4VaaGK3vJexQHjrbYhY4uw/0?wx_fmt=jpeg"
+},
+{
+url: "https://cdn.shopify.com/s/files/1/1732/4801/t/3/assets/top_banner_1.png?8844308023297046993"
+},
+{
+url: "https://simplyfordogs.com/public_html/wp-content/uploads/2017/05/Annoying-Dog-Breeds2.jpg"
+},
+{
+url: "https://i2.wp.com/food.thecookbk.com/wp-content/uploads/2017/04/puppy-1.jpg?fit=680%2C453"
+},
+{
+url: "https://beast155.files.wordpress.com/2017/01/puppy-1.jpg"
+},
+{
+url: "https://ods.princeton.edu/sites/ods/files/styles/panopoly_image_original/public/events/puppy-1_1.jpg?itok=WPJdpqQR"
+},
+{
+url: "http://neammochostos.com/wp-content/uploads/2017/10/DOGGG.jpg"
+},
+{
+url: "https://waelonline.files.wordpress.com/2017/06/img_3446-1.jpg"
+},
+{
+url: "https://farm5.static.flickr.com/4395/37066046681_68702f9b19_b.jpg"
+},
+{
+url: "https://media.licdn.com/media-proxy/ext?w=800&amp;h=800&amp;hash=f0%2BioIvBzysqmYgUYTC4Pu0E7ww%3D&amp;ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf3boLMeJerCmuVhFe3gclFVndvL6QWOzD5u0fti5KI15jZ7kJY27dA4BYBI3iSdF_NQ8"
+},
+{
+url: "https://i.pinimg.com/736x/17/ab/20/17ab208633e33bd24129170f15d5694b--dog-breeds-pictures-lab-mixes.jpg"
+},
+{
+url: "http://files.constantcontact.com/3d7913ae501/43b20aca-3843-4332-b2b5-81da6ef2bdbd.jpg"
+},
+{
+url: "https://storybookstorage.s3.amazonaws.com/items/images/000/845/084/original/20170406-6-1gki6gq.jpg?1491503994"
+},
+{
+url: "https://waelonline.files.wordpress.com/2017/06/img_3446-1.jpg?w=1060"
+},
+{
+url: "https://i2.wp.com/www.monsterbox.in/wp-content/uploads/2017/03/puppy-1.jpg?fit=680%2C453&amp;w=640"
+},
+{
+url: "http://samequizy.pl/wp-content/uploads/2017/09/filing_images_cdbca5c5fa0d.jpg"
+},
+{
+url: "http://mmbiz.qpic.cn/mmbiz_jpg/3LxMQLD9XuKyUGvvibVEbFfjO7v3nhzxZeuJDFKqo7gbdsOx5Ej5EGjkG7c6cO9Wm4VaaGK3vJexQHjrbYhY4uw/640?wx_fmt=jpeg"
+},
+{
+url: "https://beast155.files.wordpress.com/2017/01/puppy-1.jpg?w=640"
+},
+{
+url: "https://i0.wp.com/basri.my/wp-content/uploads/2017/01/puppy-1.jpg?fit=680%2C453&amp;w=640"
+},
+{
+url: "http://www.vilagvege2012.hu/wp-content/uploads/kutyus.jpg"
+},
+{
+url: "http://i0.wp.com/www.vilagvege2012.hu/wp-content/uploads/kutyus.jpg?fit=660%2C406"
+},
+{
+url: "http://media.gjczz.com/images/8777cefb3f49f9bcd1b2f69bebff05f2.jpeg"
+},
+{
+url: "http://bondanita.com/wp-content/uploads/2017/06/dogs.jpg"
+},
+{
+url: "https://gk.queryhome.com/?qa=blob&amp;qa_blobid=11143486062066513330"
+},
+{
+url: "https://cdn.shopify.com/s/files/1/2029/9557/collections/DOG_600x.jpg?v=1497597020"
+},
+{
+url: "http://i0.wp.com/www.vilagvege2012.hu/wp-content/uploads/kutyus.jpg?resize=620%2C381"
+},
+{
+url: "http://static.sanjeevnitoday.com/resources/uploads/ALL%20NEWS/12022017/When-the-dog-is-kidnapped-by-miscreants-demanded-a-ransom-of-10-million.jpg"
+},
+{
+url: "https://cdn.shopify.com/s/files/1/2380/3077/collections/goldador_puppy_580x.jpg?v=1506654205"
+},
+{
+url: "https://i.pinimg.com/564x/17/ab/20/17ab208633e33bd24129170f15d5694b--dog-breeds-pictures-lab-mixes.jpg"
+},
+{
+url: "https://lh3.googleusercontent.com/-74LjcOJeluo/WZiahjplmKI/AAAAAAAADV4/mYBGxbTF4bs1QCrPgLiSbLKEUgU8w98egCJoC/w530-h343-n/Screenshot_20170819-220602.jpg"
+},
+{
+url: "https://lh3.googleusercontent.com/-74LjcOJeluo/WZiahjplmKI/AAAAAAAADV4/mYBGxbTF4bs1QCrPgLiSbLKEUgU8w98egCJoC/w506-h750/Screenshot_20170819-220602.jpg"
+},
+{
+url: "https://2.bp.blogspot.com/-AC4nbYMu-xk/WZTc5x7CStI/AAAAAAAAFAo/onpDFE0YLEgTIEkM761qXjAD53WvN5UhQCEwYBhgL/s640/pic%2Bb.jpg"
+},
+{
+url: "http://expopets.com.br/media/cache/small/custom/domain_1/image_files/sitemgr_photo_5.jpg"
+},
+{
+url: "http://expopets.com.br/custom/domain_1/image_files/sitemgr_photo_6.jpg"
+},
+{
+url: "http://wenbo.tv/wp-content/uploads/2017/05/puppy-1.jpg"
+},
+{
+url: "http://www.insectcontrol.com.br/wp-content/uploads/2017/07/Melhores-shampoos-anti-pulgas-e-carrapatos.jpg"
+},
+{
+url: "http://fullhdwall.com/wp-content/uploads/2017/10/Beautiful-Dogs-360x260.jpg"
+}
+],
+partialMatchingImages: [
+{
+url: "https://static1.squarespace.com/static/59cc132937c58187d27d4eb8/59cc348ae45a7c33e323f235/59cc36b70abd041a4c58e8e4/1506555672272/1072BF81-2CE7-4297-B915-CE02B22D03D7.png?format=2500w"
+},
+{
+url: "https://yt3.ggpht.com/-2VuqAtGJ4zU/AAAAAAAAAAI/AAAAAAAAAAA/hFHIiiC6WaE/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+},
+{
+url: "https://i.pinimg.com/736x/5b/69/b7/5b69b7251da6c2db7a29852838f1882f--ps.jpg"
+},
+{
+url: "http://www.qysh.me/uploads/images/2017/September/05/auto_qeni_11504630653.jpg"
+},
+{
+url: "https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/18512862_1918326705117166_7794037217445281792_n.jpg"
+},
+{
+url: "https://pbs.twimg.com/media/DIFVdxAWsAUI5xE.jpg"
+},
+{
+url: "https://cdn2.hercampus.com/6%20Adorable%20Dog%20Gifs.jpg"
+},
+{
+url: "http://www.thecolombopost.net/wp-content/uploads/2017/07/Dog-2.jpg"
+},
+{
+url: "https://lh3.googleusercontent.com/-74LjcOJeluo/WZiahjplmKI/AAAAAAAADV4/mYBGxbTF4bs1QCrPgLiSbLKEUgU8w98egCJoC/w719-h465/Screenshot_20170819-220602.jpg"
+},
+{
+url: "http://tylanpowder.com/wp-content/uploads/2017/06/5-Signs-of-Joint-Pain-in-Dogs-and-the-1-Treatment-Option-1.jpg"
+},
+{
+url: "https://i.redditmedia.com/W1tIl0ZzzPAitbDYJJ3uUNWbqqLtVcg7Yu4DCTiflfM.jpg?w=680&amp;s=0583dd7bbcc65b39d6d1501ab294b4b4"
+},
+{
+url: "http://i1.wp.com/ourtru.ca/wp-ourtrucontent/uploads/2017/02/dog1.jpg"
+},
+{
+url: "https://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/21568666_340919689699613_7632052581711216640_n.jpg?ig_cache_key=MTYwMjc0OTI2MzgyODY4MjkxMQ%3D%3D.2"
+},
+{
+url: "https://i1.wp.com/www.simplypets.com/wp-content/uploads/2017/07/dog-quotes-featured.jpg?fit=680%2C453&amp;ssl=1"
+},
+{
+url: "http://happydogdiet.com/wp-content/uploads/2016/11/The-Best-Cheap-Dog-Food-To-Feed-Your-Healthy-Dog.jpg"
+},
+{
+url: "http://themaxfeed.com/wp-content/uploads/2017/05/puppy-1.jpg"
+},
+{
+url: "http://mmbiz.qpic.cn/mmbiz_jpg/3LxMQLD9XuKyUGvvibVEbFfjO7v3nhzxZeuJDFKqo7gbdsOx5Ej5EGjkG7c6cO9Wm4VaaGK3vJexQHjrbYhY4uw/0?wx_fmt=jpeg"
+},
+{
+url: "https://cdn.shopify.com/s/files/1/1732/4801/t/3/assets/top_banner_1.png?8844308023297046993"
+},
+{
+url: "https://4.bp.blogspot.com/-py7HnQ4jdFc/WKQmmmejuII/AAAAAAAAAFs/ulu_d-A4nPYoF4EYewDyHJkqQaGGV1E6ACLcB/s1600/puppy-1.jpg"
+},
+{
+url: "https://i2.wp.com/food.thecookbk.com/wp-content/uploads/2017/04/puppy-1.jpg?fit=680%2C453"
+},
+{
+url: "https://beast155.files.wordpress.com/2017/01/puppy-1.jpg"
+},
+{
+url: "https://ods.princeton.edu/sites/ods/files/styles/panopoly_image_original/public/events/puppy-1_1.jpg?itok=WPJdpqQR"
+},
+{
+url: "https://waelonline.files.wordpress.com/2017/06/img_3446-1.jpg"
+},
+{
+url: "https://farm5.static.flickr.com/4395/37066046681_68702f9b19_b.jpg"
+},
+{
+url: "https://media.licdn.com/media-proxy/ext?w=800&amp;h=800&amp;hash=f0%2BioIvBzysqmYgUYTC4Pu0E7ww%3D&amp;ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf3boLMeJerCmuVhFe3gclFVndvL6QWOzD5u0fti5KI15jZ7kJY27dA4BYBI3iSdF_NQ8"
+},
+{
+url: "https://i.pinimg.com/736x/17/ab/20/17ab208633e33bd24129170f15d5694b--dog-breeds-pictures-lab-mixes.jpg"
+},
+{
+url: "http://files.constantcontact.com/3d7913ae501/43b20aca-3843-4332-b2b5-81da6ef2bdbd.jpg"
+},
+{
+url: "https://www.amazingdognames.com/wp-content/uploads/2017/09/puppy-1.jpg"
+},
+{
+url: "https://waelonline.files.wordpress.com/2017/06/img_3446-1.jpg?w=1060"
+},
+{
+url: "http://img.playbuzz.com/image/upload/f_auto,fl_lossy,q_auto/cdn/14111c24-9e80-4dc5-8d28-29da377652f1/8e9f402d-d504-4f8f-8bdf-1fe654fbce12.jpg"
+},
+{
+url: "https://1.bp.blogspot.com/-oRdlrcqIAH4/WG6Cq7JKo4I/AAAAAAAAAWE/nhjY7G_SxTkrl1IJlEBTEO6Ap2H0-XMGQCLcB/s1600/puppy-1.jpg"
+},
+{
+url: "http://dog-b.com/wp-content/uploads/2016/11/Dogs-anyway-680x410.jpg"
+},
+{
+url: "https://i2.wp.com/www.monsterbox.in/wp-content/uploads/2017/03/puppy-1.jpg?fit=680%2C453&amp;w=640"
+},
+{
+url: "http://samequizy.pl/wp-content/uploads/2017/09/filing_images_cdbca5c5fa0d.jpg"
+},
+{
+url: "https://static.tumblr.com/a3850dda9c782a545f07e18e83429c98/qfkt14r/n1hoxb9pt/tumblr_static_4t57o0lasj6s44c4oog0g8wks_640_v2.jpg"
+},
+{
+url: "http://mmbiz.qpic.cn/mmbiz_jpg/3LxMQLD9XuKyUGvvibVEbFfjO7v3nhzxZeuJDFKqo7gbdsOx5Ej5EGjkG7c6cO9Wm4VaaGK3vJexQHjrbYhY4uw/640?wx_fmt=jpeg"
+},
+{
+url: "https://beast155.files.wordpress.com/2017/01/puppy-1.jpg?w=640"
+},
+{
+url: "https://i0.wp.com/basri.my/wp-content/uploads/2017/01/puppy-1.jpg?fit=680%2C453&amp;w=640"
+},
+{
+url: "http://dinpixmedia.ro/wp-content/uploads/2017/06/puppy-1-680x400.jpg"
+},
+{
+url: "http://www.vilagvege2012.hu/wp-content/uploads/kutyus.jpg"
+},
+{
+url: "http://i0.wp.com/www.vilagvege2012.hu/wp-content/uploads/kutyus.jpg?fit=660%2C406"
+},
+{
+url: "https://simplyfordogs.com/public_html/wp-content/uploads/2017/05/Annoying-Dog-Breeds2.jpg"
+},
+{
+url: "http://media.gjczz.com/images/8777cefb3f49f9bcd1b2f69bebff05f2.jpeg"
+},
+{
+url: "http://www.kingwhizrecords.com/wp-content/uploads/2017/09/cropped-puppy-1.jpg"
+},
+{
+url: "https://i2.wp.com/food.thecookbk.com/wp-content/uploads/2017/04/puppy-1.jpg?resize=678%2C381"
+},
+{
+url: "http://www.canildetorres.com.br/galeria/149727304351694.JPG"
+},
+{
+url: "https://storybookstorage.s3.amazonaws.com/items/images/000/845/084/original/20170406-6-1gki6gq.jpg?1491503994"
+},
+{
+url: "http://bondanita.com/wp-content/uploads/2017/06/dogs.jpg"
+},
+{
+url: "https://gk.queryhome.com/?qa=blob&amp;qa_blobid=11143486062066513330"
+},
+{
+url: "https://cdn.shopify.com/s/files/1/2029/9557/collections/DOG_600x.jpg?v=1497597020"
+}
+],
+pagesWithMatchingImages: [
+{
+url: "http://dogtime.com/dog-breeds/goldador"
+},
+{
+url: "https://ods.princeton.edu/events/therapy-dogs-1"
+},
+{
+url: "https://simplyfordogs.com/annoying-dog-breeds/29-annoying-dog-breeds/"
+},
+{
+url: "https://dir.indiamart.com/ahmedabad/pet-dogs.html"
+},
+{
+url: "https://dir.indiamart.com/vadodara/pet-dogs.html"
+},
+{
+url: "https://edo.jiji.ng/dogs-and-puppies"
+},
+{
+url: "https://www.dogalize.com/en/2017/04/fun-living-big-dog/"
+},
+{
+url: "http://aminoapps.com/page/dogs/6579194/polopii"
+},
+{
+url: "http://ourtru.ca/benefits-of-therapy-dogs/"
+},
+{
+url: "https://www.dogalize.com/en/2017/01/healthy-diet-for-dogs/"
+},
+{
+url: "https://www.kijiji.ca/b-dogs-puppies/winnipeg/golden-retriever/k0c126l1700192"
+},
+{
+url: "https://www.kijiji.ca/b-dogs-puppies/manitoba/golden-retriever/k0c126l9006"
+},
+{
+url: "http://food.thecookbk.com/dogs-not-given-grapes-heres/"
+},
+{
+url: "https://www.youtube.com/watch?v=Wd5WdWpDr20"
+},
+{
+url: "http://www.internetbusinessideas-viralmarketing.com/dogs.html"
+},
+{
+url: "https://www.pinterest.co.uk/thepawsland/dogs/"
+},
+{
+url: "http://tylanpowder.com/"
+},
+{
+url: "http://wallpapers-galleries.com/gallery/dogs-pictures.html"
+},
+{
+url: "https://www.quora.com/Why-do-westerners-blame-China-for-eating-dog-meat-while-they-are-eating-turkeys"
+},
+{
+url: "http://food.thecookbk.com/2545-2/"
+},
+{
+url: "http://aminoapps.com/page/dogs/2693585/juddy"
+},
+{
+url: "https://www.pinterest.com/pin/452893306267728375/"
+},
+{
+url: "http://mysite67.com/dogs-work-companions/"
+},
+{
+url: "https://www.simplypets.com/puppy-and-dog-quotes-pet-quotations/"
+},
+{
+url: "http://www.sfnaturalareas.org/are-you-buying-the-right-products-for-your-dogs/"
+},
+{
+url: "http://www.michaelkeaton.net/"
+},
+{
+url: "https://www.thinglink.com/scene/972910185959915522"
+},
+{
+url: "http://wallpapers-galleries.com/gallery/dogs-image.html"
+},
+{
+url: "https://www.pinterest.com/pin/452893306267058499/"
+},
+{
+url: "http://tylanpowder.com/5-signs-joint-pain-dogs-1-treatment-option/"
+},
+{
+url: "https://www.mystorybook.com/books/388614"
+},
+{
+url: "https://plus.google.com/communities/115913667422046131327/stream/c96e94da-e450-4d85-8d95-030cee1a3854"
+},
+{
+url: "http://www.localmindprovider.com/category/dogs/"
+},
+{
+url: "http://cynergii.com/dogs-pictures.html"
+},
+{
+url: "https://plus.google.com/communities/103412744482152896166/stream/79183c88-f9af-4dbf-9a7a-4a0e576c9824"
+},
+{
+url: "https://breeddogs.spinningpetsyarn.com/annoying-dog-breeds/"
+},
+{
+url: "https://edo.jiji.ng/animals-and-pets"
+},
+{
+url: "http://allkindsdogs.com/category/home/"
+},
+{
+url: "http://allkindsdogs.com/2017/06/"
+},
+{
+url: "http://www.thecolombopost.net/en/vice-chancellor"
+},
+{
+url: "http://www.philippinesreports.com/2017/08/10-most-common-dog-behaviors-what-they.html"
+},
+{
+url: "https://www.hercampus.com/school/f-and-m/6-adorable-dog-gifs-make-your-day"
+},
+{
+url: "http://www.atlanta-homes-guide.com/using-dogs-loose/"
+},
+{
+url: "http://www.cytokines2015.com/know-simple-pet-care-tips-for-your-dogs/"
+},
+{
+url: "https://www.pinterest.co.uk/pin/180355160057566981/"
+},
+{
+url: "http://dog-b.com/dogs-anyway.html"
+},
+{
+url: "http://www.michaelkeaton.net/how-often-should-heartworm-prevention-be-given/"
+},
+{
+url: "https://pets.lallabi.com/"
+},
+{
+url: "http://happydogdiet.com/the-best-cheap-dog-food-to-feed-your-healthy-dog/"
+},
+{
+url: "http://piamta.com/dogs.that.brunch"
+}
+],
+visuallySimilarImages: [
+{
+url: "http://www.petmd.com/sites/default/files/hookworms-dogs.jpg"
+},
+{
+url: "http://www.pethealthnetwork.com/sites/default/files/thyroid-dogs177494230.jpg"
+},
+{
+url: "http://diligentdogs.com/wp-content/uploads/2016/06/Diligent-Dogs-Puppy-Training-FI1.png"
+},
+{
+url: "https://img.buzzfeed.com/store-an-image-prod-us-east-1/HkI6nXywb.png?output-format=jpg?output-format=jpg&amp;downsize=660:*&amp;output-quality=auto"
+},
+{
+url: "http://www.petmd.com/sites/default/files/skin-problems-in-dogs.jpg"
+},
+{
+url: "http://cdn.skim.gs/image/upload/v1456339398/msi/Maltese_rbayli.jpg"
+},
+{
+url: "http://gzsihai.com/data/out/133/im-501799665.jpg"
+},
+{
+url: "https://myzone-none1427692330.netdna-ssl.com/wp-content/uploads/2014/03/734899052_13956580111.jpg"
+}
+]
+}
+}
