@@ -37,7 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "app",
+    "rest_framework",
 ]
+
+REST_FRAMEWORK = {
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAdminUser',
+    # ],
+    'PAGE_SIZE': 10
+}
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,6 +88,16 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    # CONN_MAX_AGE = 600
+    # "default": {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'the petroleum',
+    #     'USER': 'petroluser',
+    #     'PASSWORD': "petrolaws123",
+    #     'HOST': 'quorum-production-updating.ck4wgl7u5wcg.us-east-1.rds.amazonaws.com',
+    #     'PORT': '5432',
+    #     'CONN_MAX_AGE': 600,
+    # },
 }
 
 
