@@ -114,6 +114,9 @@ class Animal(TimeStamp):
     # for now we'll just store the json dump
     google_image_result = models.TextField(default='') #JSONField(default=dict)
 
+    # the url of the image in the twilio cloud
+    image_url = models.CharField(max_length=2048)
+
     # the conversation, stored as gField(models.CharField(max_length=4096), default=list)
 
     # another way to achieve this would be to create a record for every message we wend, and foreign key
