@@ -19,7 +19,7 @@ class Pattern(enum.Enum):
     calico = enum.Item(3, "Calido")
     solid = enum.Item(4, "Solid")
 
-class BreedType(enum.Enum):
+class DogBreed(enum.Enum):
     # there are < 400 breeds of dog in the world
     goldem_retreiver = enum.Item(1, "Golden Retriever")
 
@@ -84,6 +84,17 @@ class Message(TimeStamp):
     # the response that was generated
     response = models.CharField(max_length=2048, blank=True, null=True)
 
+nullable = {"blank": True, "null":True}
+
+class EmotionType(enum.Enum):
+    angry = enum.Item(1, "Angry")
+    scared = enum.Item(2, "Scared")
+    aloof = enum.Item(3, "Aloof")
+    friendly = enum.Item(4, "Friendly")
+
+class Gender(enum.Enum):
+    male = enum.Item(1, "Male")
+    female = enum.Item(2, "Female")
 
 class Animal(TimeStamp):
 
@@ -92,6 +103,20 @@ class Animal(TimeStamp):
 
     # the size of the animal
     # size = models.IntegerField(choices=Size, default=Size.small)
+    size = models.CharField(max_length=255, blank=True, null=True)
+    dog_breed_name = models.CharField(max_length=255, **nullable)
+    dog_breed = models.IntegerField(choices=DogBreed, **nullable)
+
+    color = models.CharField(max_length=255, **nullable)
+
+    dirty = models.CharField(max_length=255, **nullable)
+    clean = models.CharField(max_length=255, **nullable)
+
+    emotion = models.CharField(max_length=255, **nullable)
+    emotion_type = models.IntegerField(choices=EmotionType, **nullable)
+
+    gender = models.IntegerField(choices=Gender, **nullable)
+
     # color = models.IntegerField(choices=Color, default=Color)
     # animal_type = models.IntegerField(choices=AnimalType)
     # pattern = models.IntegerField(choices=Pattern)
