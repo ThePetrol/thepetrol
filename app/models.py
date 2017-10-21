@@ -130,10 +130,9 @@ class Animal(TimeStamp):
 
 
 
-
-
-
-
+class Shelter(models.Model):
+    name = models.CharField(max_length=255)
+    phone_number = models.IntegerField()
 
 
 

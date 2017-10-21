@@ -26,7 +26,7 @@ SECRET_KEY = 'ol4-q6zqgi(^c!u48#+*&0x)qvd_bfmi5)*482492u2ovy#u)j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.196.92.236']
+ALLOWED_HOSTS = ['35.196.92.236', '0.0.0.0']
 
 
 # Application definition
@@ -139,3 +139,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+DEBUG_PHONE_NUMBER = 5053280879
+GOOGLE_API_KEY = 'AIzaSyD8GcHMHhfKLIa-gF9azq4sHwCeqNdE4Wc'
