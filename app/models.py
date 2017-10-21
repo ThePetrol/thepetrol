@@ -19,7 +19,7 @@ class Pattern(enum.Enum):
     calico = enum.Item(3, "Calido")
     solid = enum.Item(4, "Solid")
 
-class DogBreed(enum.Enum):
+class BreedType(enum.Enum):
     # there are < 400 breeds of dog in the world
     goldem_retreiver = enum.Item(1, "Golden Retriever")
 
@@ -104,16 +104,16 @@ class Animal(TimeStamp):
     # the size of the animal
     # size = models.IntegerField(choices=Size, default=Size.small)
     size = models.CharField(max_length=255, blank=True, null=True)
-    dog_breed_name = models.CharField(max_length=255, **nullable)
-    dog_breed = models.IntegerField(choices=DogBreed, **nullable)
+    breed = models.CharField(max_length=255, **nullable)
+    # breed = models.IntegerField(choices=Breed, **nullable)
 
     color = models.CharField(max_length=255, **nullable)
 
     dirty = models.CharField(max_length=255, **nullable)
-    clean = models.CharField(max_length=255, **nullable)
+    # clean = models.CharField(max_length=255, **nullable)
 
     emotion = models.CharField(max_length=255, **nullable)
-    emotion_type = models.IntegerField(choices=EmotionType, **nullable)
+    # emotion_type = models.IntegerField(choices=EmotionType, **nullable)
 
     gender = models.IntegerField(choices=Gender, **nullable)
 
