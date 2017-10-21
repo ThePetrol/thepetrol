@@ -4,20 +4,9 @@ from rest_framework import serializers
 class AnimalSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Animal
-        fields = ('url', 'username', 'email', 'groups')
-
+        fields = '__all__'
 
 class MessageSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Message
-        fields = (
-            'text',
-            'created',
-            'updated',
-            'from_number',
-            'to_number',
-            'sent',
-            'received',
-            'error',
-            'text',
-        )
+        fields = '__all__'

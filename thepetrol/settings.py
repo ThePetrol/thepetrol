@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
+#
 
 import os
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'ol4-q6zqgi(^c!u48#+*&0x)qvd_bfmi5)*482492u2ovy#u)j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.236.247.234']
+ALLOWED_HOSTS = ['35.196.92.236']
 
 
 # Application definition
@@ -45,7 +46,7 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': [
     #     'rest_framework.permissions.IsAdminUser',
     # ],
-    'PAGE_SIZE': 10
+    # 'PAGE_SIZE': 10
 }
 
 MIDDLEWARE_CLASSES = [

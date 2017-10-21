@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from common import enum
 from django.db import models
+#
 # from django.contrib.postgres.fields import JSONField, ArrayField
 
 class Color(enum.Enum):
@@ -66,9 +67,8 @@ class TimeStamp(models.Model):
 
     class Meta:
         abstract = True
-
+#
 class Message(TimeStamp):
-
     '''
     Represents a message that was sent or received via twilio
     '''
@@ -83,7 +83,6 @@ class Message(TimeStamp):
 
     # the response that was generated
     response = models.CharField(max_length=2048, blank=True, null=True)
-
 
 
 class Animal(TimeStamp):
@@ -108,11 +107,12 @@ class Animal(TimeStamp):
     # image = models.ImageField(blank=True, null=True)
 
     # the geopoint of the image
-    # latitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
-    # longitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
+    latitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
+    longitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
 
     # the result of google image processing
-    # google_image_result = JSONField(default=dict)
+    # for now we'll just store the json dump
+    google_image_result = models.TextField(default='') #JSONField(default=dict)
 
     # the conversation, stored as gField(models.CharField(max_length=4096), default=list)
 
