@@ -72,19 +72,17 @@ class Message(TimeStamp):
     '''
     Represents a message that was sent or received via twilio
     '''
-
     from_number = models.IntegerField()
     to_number = models.IntegerField()
-
-    # did we send this message
-    sent = models.BooleanField(default=False)
-    # did we receive this message
-    received = models.BooleanField(default=True)
-
     # was there an error in sending this message
     error = models.BooleanField(default=False)
     # animal = models.ForeignKey(Animal, blank=True, null=True, related_name="messages")
+
+    # the text tha was received
     text = models.CharField(max_length=2048)
+
+    # the response that was generated
+    response = models.CharField(max_length=2048, blank=True, null=True)
 
 
 
