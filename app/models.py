@@ -115,7 +115,7 @@ class Animal(TimeStamp):
     google_image_result = models.TextField(default='') #JSONField(default=dict)
 
     # the url of the image in the twilio cloud
-    image_url = models.CharField(max_length=2048)
+    image_url = models.CharField(max_length=2048, blank=True, null=True)
 
     # the conversation, stored as gField(models.CharField(max_length=4096), default=list)
 
