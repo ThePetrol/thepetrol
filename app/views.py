@@ -7,7 +7,7 @@ from app.models import Message, Animal, Shelter
 from rest_framework.decorators import api_view
 from django.http import HttpResponse, Http404
 from django.conf import settings
-
+from django.views.generic import TemplateView
 
 class MessageViewSet(viewsets.ModelViewSet):
     """
