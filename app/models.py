@@ -119,18 +119,20 @@ class Animal(TimeStamp):
 
 
     @staticmethod
+    def point_near(lat, lng):
+        return (
+            random.uniform(float(lat) - 0.001, float(lat) + 0.001),
+            random.uniform(float(lng) - 0.001, float(lng) + 0.001)
+        )
+
+    @staticmethod
     def scatter_around(point):
         points = [point]
         lat, lng = point
         number_of_points = random.randint(5, 10)
 
         for i in range(number_of_points):
-            points.append(
-                (
-                    random.uniform(lat - 0.005, lat + 0.005),
-                    random.uniform(lng - 0.005, lng + 0.005)
-                )
-            )
+            points.append(Animal.point_near(lat, lng))
         return points
 
     @staticmethod
@@ -144,6 +146,16 @@ class Animal(TimeStamp):
                 )
                 print "Saving", a
                 a.save()
+    def save(self, **kwargs):
+        # if this is the first save
+        if not self.pk:
+            if self.latitude and self.longitude:
+                # scatter near this point
+                new_lat, new_lng = Animal.point_near(self.latitude, self.longitude)
+                self.latitude = new_lat
+                self.longitude = new_lng
+        super(Animal, self).save(**kwargs)
+
 
     # def scatter_animals(self, latitude, longitude):
     #     # print(Animal.objects.scatter_animals(40.7829, -73.9654)) # Coordinates of Central Par in NYC

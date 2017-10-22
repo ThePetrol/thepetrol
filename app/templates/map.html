@@ -37,10 +37,10 @@
       ]
       function initMap() {
         var markers = [];
-        var harvard = {lat: 42.3770, lng: -71.1167}
+        var harvard = {lat: 42.3810, lng: -71.1252}
         map = new google.maps.Map(document.getElementById('map'), {
           center: harvard,
-          zoom: 15
+          zoom: 18
         });
         var updateMap = () => {
           axios
@@ -56,13 +56,25 @@
               marker.addListener('click', ()=>{
                 // alert(animal.image_url);
                 console.log(animal);
+                window.openWindow && openWindow.close();
                 var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       // '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
       '<div id="bodyContent">'+
-      '<img width="200" height="200" src=' + animal.image_url + '/>' +
-      (animal.breed ? '<p><b>Breed:</b>'+ animal.breed +'<p>' : "") +
+      (animal.image_url ? '<img width="200" height="200" src=' + animal.image_url + '/>' : "" ) +
+      (animal.phone_number ? '<p><b>Call:</b>'+ animal.phone_number +'<p>' : "") +
+      (animal.breed ? '<p><b>Breed:</b> '+ animal.breed +'<p>' : "") +
+      (animal.size ? '<p><b>Size:</b> '+ animal.size +'<p>' : "") +
+      (animal.gender ? '<p><b>Gender:</b> '+ animal.gender +'<p>' : "") +
+      (animal.pattern ? '<p><b>Pattern:</b> '+ animal.pattern +'<p>' : "") +
+      (animal.hair ? '<p><b>Hair:</b> '+ animal.hair +'<p>' : "") +
+      (animal.color ? '<p><b>Color:</b> '+ animal.color +'<p>' : "") +
+      (animal.health ? '<p><b>Health:</b> '+ animal.health +'<p>' : "") +
+      (animal.weight ? '<p><b>Weight:</b> '+ animal.weight +'<p>' : "") +
+      (animal.emotion ? '<p><b>State:</b> '+ animal.emotion +'<p>' : "") +
+      (animal.dirty ? '<p><b>Cleanliness:</b> '+ animal.dirty +'<p>' : "") +
+
 
       // '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       // 'sandstone rock formation in the southern part of the '+
@@ -84,6 +96,7 @@
         content: contentString
       });
       infowindow.open(map, marker)
+      window.openWindow = infowindow
 
               });
             })
