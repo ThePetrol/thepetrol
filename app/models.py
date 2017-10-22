@@ -98,9 +98,21 @@ class Gender(enum.Enum):
 
 import random
 
+
+
 points = [
-    (38.8977, -77.0365)
+    (38.8977, -77.0365),
+    (38.907327, -77.079246),
+    (38.910512, -77.079414),
+    (38.912251, -77.080579),
+    (38.915788, -77.081995),
+    (38.920474, -77.083796),
+    (38.918002, -77.079870),
+    (38.918148, -77.077054),
+    (38.924499, -77.082947),
+    (38.926065, -77.015119),
     # (40.7829, -73.9654)
+    #
 ]
 
 class Animal(TimeStamp):
@@ -115,8 +127,8 @@ class Animal(TimeStamp):
         for i in range(number_of_points):
             points.append(
                 (
-                    random.uniform(lat - 0.01, lat + 0.01),
-                    random.uniform(lng - 0.01, lng + 0.01)
+                    random.uniform(lat - 0.005, lat + 0.005),
+                    random.uniform(lng - 0.005, lng + 0.005)
                 )
             )
         return points
