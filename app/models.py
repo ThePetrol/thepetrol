@@ -96,9 +96,57 @@ class Gender(enum.Enum):
     male = enum.Item(1, "Male")
     female = enum.Item(2, "Female")
 
+import random
+
+points = [
+    (38.8977, -77.0365)
+    # (40.7829, -73.9654)
+]
+
 class Animal(TimeStamp):
 
 
+    @staticmethod
+    def scatter_around(point):
+        points = [point]
+        lat, lng = point
+        number_of_points = random.randint(5, 10)
+
+        for i in range(number_of_points):
+            points.append(
+                (
+                    random.uniform(lat - 0.01, lat + 0.01),
+                    random.uniform(lng - 0.01, lng + 0.01)
+                )
+            )
+        return points
+
+    @staticmethod
+    def scatter_animals():
+        for point in points:
+            surrounding_points = Animal.scatter_around(point)
+            for lat, lng in surrounding_points:
+                a = Animal(
+                    latitude=lat,
+                    longitude=lng
+                )
+                print "Saving", a
+                a.save()
+
+    # def scatter_animals(self, latitude, longitude):
+    #     # print(Animal.objects.scatter_animals(40.7829, -73.9654)) # Coordinates of Central Par in NYC
+    #     animal = self.create(latitude=latitude, longitude=longitude)
+    #     animal.latitudes, animal.longitudes = get_distribution(latitude, longitude)
+    #     animal.save()
+    #     return animal
+
+    # def get_distribution(latitude, longitude):
+    #     latitudes = list()
+    #     longitudes = list()
+
+    #     for i in range(number_of_points):
+
+    #     return latitudes, longitudes
     # has_tag = models.BooleanField()
 
     # the size of the animal

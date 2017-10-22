@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8GcHMHhfKLIa-gF9azq4sHwCeqNdE4Wc&libraries=visualization">
+  </script>
+
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // var heatmapData = [
+  // new google.maps.LatLng(37.782, -122.447),
+  // new google.maps.LatLng(37.782, -122.445),
+  // new google.maps.LatLng(37.782, -122.443),
+  // new google.maps.LatLng(37.782, -122.441),
+  // new google.maps.LatLng(37.782, -122.439),
+  // new google.maps.LatLng(37.782, -122.437),
+  // new google.maps.LatLng(37.782, -122.435),
+  // new google.maps.LatLng(37.785, -122.447),
+  // new google.maps.LatLng(37.785, -122.445),
+  // new google.maps.LatLng(37.785, -122.443),
+  // new google.maps.LatLng(37.785, -122.441),
+  // new google.maps.LatLng(37.785, -122.439),
+  // new google.maps.LatLng(37.785, -122.437),
+
+  // new google.maps.LatLng(38.907327, -77.079246),
+  // new google.maps.LatLng(38.910512, -77.079414),
+  // new google.maps.LatLng(38.912251, -77.080579),
+  // new google.maps.LatLng(38.915788, -77.081995),
+  // new google.maps.LatLng(38.920474, -77.083796),
+  // new google.maps.LatLng(38.918002, -77.079870),
+  // new google.maps.LatLng(38.918148, -77.077054),
+  // new google.maps.LatLng(38.924499, -77.082947),
+  // new google.maps.LatLng(38.926065, -77.015119),
+
+// ];
+
+var washingtonDC = new google.maps.LatLng(38.8977, -77.0365);
+
+map = new google.maps.Map(document.getElementById('map'), {
+  center: washingtonDC,
+  zoom: 13,
+  mapTypeId: 'satellite'
+});
+
+  var updateMap = () => {
+          axios
+          .get("http://35.196.92.236:8080/animals/")
+          .then((response)=>{
+            // debugger
+            var heatmapData = response.data.map((animal) =>{
+              return new google.maps.LatLng(Number(animal.latitude), Number(animal.longitude))
+            })
+
+            var heatmap = new google.maps.visualization.HeatmapLayer({
+              data: heatmapData
+            });
+            heatmap.setMap(map);
+              // marker.addListener('click', ()=>{
+                // alert(animal.image_url);
+        })
+    }
+  updateMap();
+
+
+
+
+
+      // var map;
+      // var reports = [
+      //   {lat: 42.3770, lng: -71.1167},
+      //   {lat: 42.3760, lng: -71.1157},
+      //   {lat: 42.3750, lng: -71.1147},
+      //   {lat: 42.3770, lng: -71.1137},
+      //   {lat: 42.3760, lng: -71.1127},
+      //   {lat: 42.3750, lng: -71.1117},
+      //   {lat: 42.3770, lng: -71.1107},
+      //   {lat: 42.3760, lng: -71.1187},
+      //   {lat: 42.3750, lng: -71.1117}
+      // ]
+      // function initMap() {
+      //   var markers = [];
+      //   var harvard = {lat: 42.3770, lng: -71.1167}
+      //   map = new google.maps.Map(document.getElementById('map'), {
+      //     center: harvard,
+      //     zoom: 15
+      //   });
+      //   var updateMap = () => {
+      //     axios
+      //     .get("http://35.196.92.236:8080/animals/")
+      //     .then((response)=>{
+      //       markers.map((marker) => marker.setMap(null))
+      //       response.data.map((animal) =>{
+      //         var marker = new google.maps.Marker({
+      //           position: {lat: Number(animal.latitude), lng: Number(animal.longitude)},
+      //           // icon: animal.image_url,
+      //           map: map,
+      //         })
+      //         marker.addListener('click', ()=>{
+      //           // alert(animal.image_url);
+
+      //           var contentString = '<div id="content">'+
+      // '<div id="siteNotice">'+
+      // '</div>'+
+      // // '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+      // '<div id="bodyContent">'+
+      // '<img width="200" height="200" src=' + animal.image_url + '/>'
+      // '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      // 'sandstone rock formation in the southern part of the '+
+      // 'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      // 'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      // '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      // 'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      // 'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      // 'Aboriginal people of the area. It has many springs, waterholes, '+
+      // 'rock caves and ancient paintings. Uluru is listed as a World '+
+      // 'Heritage Site.</p>'+
+      // '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      // 'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      // '(last visited June 22, 2009).</p>'+
+      // '</div>'+
+      // '</div>';
+
+      // var infowindow = new google.maps.InfoWindow({
+      //   content: contentString
+      // });
+      // infowindow.open(map, marker)
+
+      //         });
+      //       })
+      //     })
+      //   }
+      //   updateMap()
+      //   setInterval(updateMap, 5000)
+
+      //   // reports.map(function(report){
+      //   //   var marker = new google.maps.Marker({
+      //   //     position: report,
+      //   //     map: map,
+      //   //   })
+      //   // })
+      //   // var marker = new google.maps.Marker({
+      //   //   position: harvard,
+      //   //   map: map
+      //   // });
+      // }
+    </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8GcHMHhfKLIa-gF9azq4sHwCeqNdE4Wc&callback=initMap"
+    async defer></script> -->
+  </body>
+</html>

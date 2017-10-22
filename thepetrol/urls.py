@@ -28,7 +28,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),
     url(r'^locate/', views.locate),
-    url(r'^map/', TemplateView.as_view(template_name="map.html"))
+    url(r'^map/', TemplateView.as_view(template_name="map.html")),
+    url(r'^heatmap/', TemplateView.as_view(template_name="heatmap.html"))
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 
 ]
